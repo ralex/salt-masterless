@@ -14,8 +14,15 @@ chmod +x bootstrap.sh
 |Repository|Content|
 |---|---|
 |`salt-masterless`|(This repository) Contains states to manage a masterless setup|
-|[`salt-latop`](https://github.com/ralex/salt-laptop)| Provides states for a work station setup|
+|[`salt-laptop`](https://github.com/ralex/salt-laptop)| Provides states for a work station setup|
 
+Determining which state must be applied is based on `roles` grains applied on each machine.
+For example, here is the file `/etc/salt/grains` on my personal computer:
+```yaml
+roles:
+  - laptop
+  - home
+```
 
 ![Diagram](docs/diagram.svg)
 
