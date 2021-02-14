@@ -1,4 +1,5 @@
 # salt-masterless
+
 Saltstack top file and states for my masterless setup.
 
 ## Bootstrap a masterless machine
@@ -17,7 +18,9 @@ chmod +x bootstrap.sh
 |[`salt-laptop`](https://github.com/ralex/salt-laptop)| Provides states for a work station setup|
 
 Determining which state must be applied is based on `roles` grains applied on each machine.
+
 For example, here is the file `/etc/salt/grains` on my personal computer:
+
 ```yaml
 roles:
   - laptop
@@ -28,7 +31,7 @@ roles:
 
 *`salt-pillar` is a private git repository as it may contain sensitive informations.*
 
-## Debugging
+## Debugging
 
 Add `test=True` on state.apply to print out potential changes before applying:
 ```bash
