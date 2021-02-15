@@ -9,6 +9,7 @@ base:
     - i3
     - keybase
     - kubernetes-client
+    - nodejs
     - minikube
     - sddm
     - signal
