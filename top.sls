@@ -15,6 +15,7 @@ base:
     - signal
     - spotify
     - ssh.client
+    - tailscale
     - taskwarrior
     - terminator
     - terraform
@@ -26,7 +27,6 @@ base:
     - match: grain
     - cura
     - docker
-    - tailscale
 
   'roles:work':
     - match: grain
