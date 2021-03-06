@@ -38,3 +38,7 @@ base:
   'os:Debian and roles:laptop':
     - match: grain
     - debian
+
+  'roles:nginx':
+    - match: grain
+    - nginx
