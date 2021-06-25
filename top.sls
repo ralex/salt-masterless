@@ -34,8 +34,8 @@ base:
     - docker-cds
     - trivy
 
-  'os:Debian and roles:laptop':
-    - match: grain
+  'G@os:Debian and G@roles:laptop':
+    - match: compound
     - debian
 
   'roles:nginx':
