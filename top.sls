@@ -11,7 +11,6 @@ base:
     - kubernetes-client
     - nodejs
     - minikube
-    - sddm
     - signal
     - spotify
     - ssh.client
