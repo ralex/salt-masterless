@@ -31,6 +31,7 @@ base:
     - match: grain
     - common
     - docker-cds
+    - taskwarrior-cds
     - trivy
 
   'G@os:Debian and G@roles:laptop':
