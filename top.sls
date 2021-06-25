@@ -30,7 +30,6 @@ base:
 
   'roles:work':
     - match: grain
-    - cntlm
     - common
     - docker-cds
     - trivy
