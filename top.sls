@@ -12,6 +12,7 @@ base:
     - nodejs
     - minikube
     - signal
+    - sony-headphone-client
     - spotify
     - ssh.client
     - tailscale
