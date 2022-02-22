@@ -32,6 +32,7 @@ base:
     - match: grain
     - common
     - docker-cds
+    - joplin
     - taskwarrior-cds
     - trivy
 
