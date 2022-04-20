@@ -27,6 +27,7 @@ base:
     - match: grain
     - cura
     - docker
+    - twitch
 
   'roles:work':
     - match: grain
