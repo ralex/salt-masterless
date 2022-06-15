@@ -5,7 +5,7 @@ Saltstack top file and states for my masterless setup.
 ## Bootstrap a masterless machine
 
 ```bash
-curl https://github.com/ralex/salt-masterless/bootstrap.sh -o bootstrap.sh
+curl https://raw.githubusercontent.com/ralex/salt-masterless/master/bootstrap.sh -o bootstrap.sh
 chmod +x bootstrap.sh
 ./bootstrap.sh
 ```
