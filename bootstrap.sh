@@ -15,7 +15,7 @@ file_ignore_regex:
   - ^\.git
 
 gitfs_remotes:
-  - https://github.com/ralex/salt-laptop
+  - https://github.com/ralex/salt-masterless
 
 EOF
 
