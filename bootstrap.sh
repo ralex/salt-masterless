@@ -1,7 +1,7 @@
 #!/bin/bash
 # Bootstrap Saltstack
 curl -L https://bootstrap.saltstack.com -o bootstrap_salt.sh
-sudo sh bootstrap_salt.sh -v -X -p python3-git stable
+sudo sh bootstrap_salt.sh
 
 # Set masterless minion
 echo 'file_client: local' | sudo tee /etc/salt/minion.d/file_client.conf
