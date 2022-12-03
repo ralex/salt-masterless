@@ -11,6 +11,7 @@ base:
     - kubernetes-client
     - nodejs
     - minikube
+    - salt
     - signal
     - sony-headphone-client
     - spotify
