@@ -1,9 +1,13 @@
 #!/bin/bash
 # Bootstrap Saltstack
-curl -L https://bootstrap.saltstack.com -o bootstrap_salt.sh
-sudo sh bootstrap_salt.sh
+echo 'deb [signed-by=/etc/apt/trusted.gpg.d/salt-archive-keyring.gpg arch=amd64] https://repo.saltproject.io/salt/py3/debian/11/amd64/latest bullseye main' | sudo tee /etc/apt/sources.list.d/saltstack.list
+curl https://repo.saltproject.io/salt/py3/debian/11/amd64/latest/salt-archive-keyring.gpg | sudo tee /etc/apt/trusted.gpg.d/salt-archive-keyring.gpg
 
+sudo apt update
+sudo apt install salt-common
 sudo salt-pip install GitPython
+
+mkdir -p /etc/salt/minion.d
 
 # Set masterless minion
 echo 'file_client: local' | sudo tee /etc/salt/minion.d/file_client.conf
@@ -18,6 +22,7 @@ file_ignore_regex:
 
 gitfs_remotes:
   - https://github.com/ralex/salt-masterless
+  - https://github.com/ralex/salt-laptop
 
 EOF
 
