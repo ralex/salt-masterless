@@ -3,6 +3,8 @@
 curl -L https://bootstrap.saltstack.com -o bootstrap_salt.sh
 sudo sh bootstrap_salt.sh
 
+sudo salt-pip install GitPython
+
 # Set masterless minion
 echo 'file_client: local' | sudo tee /etc/salt/minion.d/file_client.conf
 
