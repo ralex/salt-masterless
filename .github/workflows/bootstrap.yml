@@ -12,7 +12,7 @@ jobs:
       - name: Add prerequisites
         run: |
           apt update
-          apt install -y sudo curl
+          apt install -y sudo curl git
           sudo mkdir -p /etc/salt/
           sudo tee /etc/salt/grains << EOF
           roles:
