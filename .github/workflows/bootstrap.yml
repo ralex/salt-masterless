@@ -4,6 +4,8 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: jrei/systemd-debian
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
