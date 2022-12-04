@@ -4,7 +4,7 @@ echo 'deb [signed-by=/etc/apt/trusted.gpg.d/salt-archive-keyring.gpg arch=amd64]
 curl https://repo.saltproject.io/salt/py3/debian/11/amd64/latest/salt-archive-keyring.gpg | sudo tee /etc/apt/trusted.gpg.d/salt-archive-keyring.gpg
 
 sudo apt update
-sudo apt install salt-common
+sudo apt install -y salt-common
 sudo salt-pip install GitPython
 
 mkdir -p /etc/salt/minion.d
