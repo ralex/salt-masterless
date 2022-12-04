@@ -1,4 +1,4 @@
-name: Run on Ubuntu
+name: Test bootstrap install
 on: push
 
 jobs:
