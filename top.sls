@@ -34,7 +34,7 @@ base:
     - match: grain
     - common
     - docker-cds
-    - joplin
+    - nsgclient
     - taskwarrior-cds
     - trivy
 
