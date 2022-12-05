@@ -1,5 +1,7 @@
 # salt-masterless
 
+[![Test bootstrap install](https://github.com/ralex/salt-masterless/actions/workflows/bootstrap.yml/badge.svg)](https://github.com/ralex/salt-masterless/actions/workflows/bootstrap.yml)
+
 Saltstack top file and states for my masterless setup.
 
 ## Bootstrap a masterless machine
