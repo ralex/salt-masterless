@@ -13,12 +13,6 @@ jobs:
         run: |
           apt update
           apt install -y sudo cron curl git
-          sudo mkdir -p /etc/salt/
-          sudo tee /etc/salt/grains << EOF
-          roles:
-            - laptop
-            - home
-          EOF
       - name: Run bootstrap script
         run: |
           bash bootstrap.sh
