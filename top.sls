@@ -4,6 +4,7 @@ base:
 
   'roles:laptop':
     - match: grain
+    - asdf
     - bash
     - git
     - i3
