@@ -6,6 +6,7 @@ base:
     - match: grain
     - asdf
     - bash
+    - direnv
     - git
     - i3
     - keybase
