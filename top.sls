@@ -11,6 +11,7 @@ base:
     - i3
     - keybase
     - kubernetes-client
+    - pipewire
     - nodejs
     - minikube
     - salt
