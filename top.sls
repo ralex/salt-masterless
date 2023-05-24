@@ -9,6 +9,7 @@ base:
     - direnv
     - git
     - i3
+    - joplin
     - keybase
     - kubernetes-client
     - pipewire
