@@ -7,7 +7,7 @@ echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64]
 
 sudo apt update
 sudo apt install -y salt-common jq
-sudo salt pip install GitPython
+sudo salt-pip install GitPython
 
 mkdir -p /etc/salt/minion.d
 
