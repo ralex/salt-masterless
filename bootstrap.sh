@@ -1,11 +1,13 @@
 #!/bin/bash
 # Bootstrap Saltstack
-echo 'deb [signed-by=/etc/apt/trusted.gpg.d/salt-archive-keyring.gpg arch=amd64] https://repo.saltproject.io/salt/py3/debian/11/amd64/latest bullseye main' | sudo tee /etc/apt/sources.list.d/saltstack.list
-curl https://repo.saltproject.io/salt/py3/debian/11/amd64/latest/salt-archive-keyring.gpg | sudo tee /etc/apt/trusted.gpg.d/salt-archive-keyring.gpg
+mkdir /etc/apt/keyrings
+
+sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg https://repo.saltproject.io/salt/py3/debian/11/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/debian/11/amd64/latest bullseye main" | sudo tee /etc/apt/sources.list.d/saltstack.list
 
 sudo apt update
 sudo apt install -y salt-common jq
-sudo salt-pip install GitPython
+sudo salt pip install GitPython
 
 mkdir -p /etc/salt/minion.d
 
