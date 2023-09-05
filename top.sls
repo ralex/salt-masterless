@@ -32,6 +32,7 @@ base:
     - match: grain
     - cura
     - docker
+    - regolith-desktop
     - twitch
 
   'roles:work':
