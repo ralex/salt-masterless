@@ -8,7 +8,6 @@ base:
     - bash
     - direnv
     - git
-    - i3
     - joplin
     - keybase
     - kubernetes-client
@@ -39,6 +38,7 @@ base:
     - match: grain
     - common
     - docker-cds
+    - i3
     - nsgclient
     - taskwarrior-cds
     - trivy
