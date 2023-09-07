@@ -14,6 +14,7 @@ base:
     - pipewire
     - nodejs
     - minikube
+    - regolith-desktop
     - salt
     - signal
     - sony-headphone-client
@@ -31,14 +32,12 @@ base:
     - match: grain
     - cura
     - docker
-    - regolith-desktop
     - twitch
 
   'roles:work':
     - match: grain
     - common
     - docker-cds
-    - i3
     - nsgclient
     - taskwarrior-cds
     - trivy
