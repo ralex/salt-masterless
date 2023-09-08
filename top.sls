@@ -40,6 +40,7 @@ base:
     - docker-cds
     - nsgclient
     - taskwarrior-cds
+    - teams
     - trivy
 
   'G@os:Debian and G@roles:laptop':
