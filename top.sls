@@ -11,6 +11,7 @@ base:
     - joplin
     - keybase
     - kubernetes-client
+    - logseq
     - pipewire
     - nodejs
     - minikube
