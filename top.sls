@@ -12,9 +12,10 @@ base:
     - keybase
     - kubernetes-client
     - logseq
-    - pipewire
-    - nodejs
     - minikube
+    - nodejs
+    - nuke
+    - pipewire
     - regolith-desktop
     - salt
     - signal
