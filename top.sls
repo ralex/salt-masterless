@@ -38,12 +38,8 @@ base:
 
   'roles:work':
     - match: grain
-    - common
-    - docker-cds
-    - nsgclient
-    - taskwarrior-cds
-    - teams
-    - trivy
+    - logseq
+    - regolith-desktop
 
   'G@os:Debian and G@roles:laptop':
     - match: compound
