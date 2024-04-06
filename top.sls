@@ -10,7 +10,6 @@ base:
     - firefox-nightly
     - git
     - joplin
-    - kubernetes-client
     - logseq
     - minikube
     - nodejs
