@@ -13,7 +13,6 @@ base:
     - logseq
     - minikube
     - nodejs
-    - nuke
     - pipewire
     - regolith-desktop
     - salt
