@@ -7,6 +7,7 @@ base:
     - asdf
     - bash
     - direnv
+    - firefox
     - firefox-nightly
     - git
     - joplin
