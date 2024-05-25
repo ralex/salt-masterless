@@ -8,7 +8,7 @@ base:
     - bash
     - direnv
     - firefox
-    - firefox-nightly
+    - firefox.nightly
     - git
     - joplin
     - logseq
