@@ -1,7 +1,7 @@
-deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/debian/11/amd64/latest bullseye main:
+deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.pgp arch=amd64] https://packages.broadcom.com/artifactory/saltproject-deb stable main:
   pkgrepo.managed:
     - file: /etc/apt/sources.list.d/saltstack.list
-    - key_url: https://repo.saltproject.io/salt/py3/debian/11/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+    - key_url: https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public
     - aptkey: False
 
 salt-minion:
